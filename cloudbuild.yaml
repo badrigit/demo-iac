@@ -1,0 +1,13 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - demo_storage
+  - --project=alien-house-312815
+  - --runtime=python37
+  - --region=europe-west2
+  - --source=demo_cf
+  - --trigger-resource=sunny-atrium-312709-tfstate
+  - --trigger-event=google.storage.object.finalize
