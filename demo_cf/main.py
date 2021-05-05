@@ -10,7 +10,6 @@ def demo_storage(event, context):
     Returns:
         None; the output is written to Stackdriver Logging
     """
-
     print('Event ID: {}'.format(context.event_id))
     print('Event type: {}'.format(context.event_type))
     print('Bucket: {}'.format(event['bucket']))
